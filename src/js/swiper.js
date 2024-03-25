@@ -15,4 +15,21 @@ export function initSwiper() {
 
 		const sliderTemplate = new Swiper('.template__swiper', settings)
 	}
+
+	const ourServicesSlider = document.querySelector('.our-services__swiper')
+
+	if (ourServicesSlider) {
+		const settings = {
+			enabled: true,
+			slidesPerView: 2.4,
+			breakpoints: {
+				700: {
+					spaceBetween: 100,
+					enabled: false,
+					slidesPerView: 3
+				}
+			}
+		}
+		const sliderOurServices = new Swiper('.our-services__swiper', settings)
+	}
 }
