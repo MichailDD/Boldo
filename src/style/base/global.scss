@@ -1,0 +1,22 @@
+@import "media-breakpoints";
+@import "normalize";
+
+.wrapper {
+	overflow-x: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-right: calc(-100vw - -100%);
+	position: relative;
+
+	.content {
+		flex: 1 1 auto;
+	}
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
