@@ -2,8 +2,7 @@
 
 .template {
 	background-color: var(--dark-blue);
-	padding-top: 163px;
-
+	padding: 163px 0 65px 0;
 
 	@include media-breakpoint-down(md) {
 		padding-top: 70px;
@@ -88,6 +87,44 @@
 				color: var(--dark-blue);
 			}
 		}
+	}
+
+	&__swiper {
+		margin-top: 90px;
+		overflow: hidden;
+		position: relative;
+
+		// &::before,
+		// &::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	top: 0;
+		// 	bottom: 0;
+		// 	width: 80px;
+		// 	z-index: 2;
+		// 	opacity: 0.9;
+		// 	background: linear-gradient(90deg, #0a2640 0%, #0a2640 32.29%, #0a2640 74.48%, #0a2640 100%);
+		// }
+
+		// &::before {
+		// 	left: 0;
+		// 	background-position: left;
+		// }
+
+		// &::after {
+		// 	right: 0;
+		// 	background-position: right;
+		// }
+
+		&-slide {
+			max-width: 150px;
+			cursor: grab;
+		}
+
+		&-wrapper {
+			max-width: 1175px;
+		}
+
 	}
 
 	&__image {
