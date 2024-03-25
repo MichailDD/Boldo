@@ -1,11 +1,11 @@
 $breakpoints: (
-        xxs: 375px,
-        xs: 576px,
-        sm: 700px,
-        md: 1024px,
-        lg: 1420px,
-        l: 1650px,
-        xl: 1920px,
+  xxs: 375px,
+  xs: 576px,
+  sm: 700px,
+  md: 1024px,
+  lg: 1125px,
+  l: 1650px,
+  xl: 1920px,
 );
 
 @mixin media-breakpoint-up($breakpoint) {
@@ -15,7 +15,9 @@ $breakpoints: (
     @media (min-width: $breakpoint-value) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
 }
@@ -27,7 +29,9 @@ $breakpoints: (
     @media (max-width: $breakpoint-value - 1) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
 }

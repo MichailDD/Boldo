@@ -4,6 +4,7 @@
 	background-color: var(--dark-blue);
 	padding: 163px 0 85px 0;
 
+
 	@include media-breakpoint-down(md) {
 		padding: 70px 0 45px 0;
 	}
@@ -26,7 +27,7 @@
 	&__information {
 		max-width: 555px;
 		z-index: 10;
-
+		
 		@include media-breakpoint-down(md) {
 			max-width: 100%;
 		}

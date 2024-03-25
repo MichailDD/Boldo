@@ -21,12 +21,12 @@ export function initSwiper() {
 	if (ourServicesSlider) {
 		const settings = {
 			enabled: true,
-			slidesPerView: 2.4,
+			slidesPerView: 'auto',
+
 			breakpoints: {
-				700: {
-					spaceBetween: 100,
+				1024: {
 					enabled: false,
-					slidesPerView: 3
+					slidesPerView: 'auto'
 				}
 			}
 		}
