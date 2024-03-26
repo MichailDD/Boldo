@@ -45,3 +45,15 @@
 		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 	}
 }
+
+@keyframes fade {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

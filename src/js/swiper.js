@@ -42,7 +42,15 @@ export function initSwiper() {
 				prevEl: '.enterprise__slider-btn-prev',
 				nextEl: '.enterprise__slider-btn-next'
 			},
-			slidesPerView: 3,
+			breakpoints: {
+				1024: {
+					slidesPerView: 3
+				},
+				699: {
+					slidesPerView: 2.2
+				}
+			},
+			slidesPerView: 1.2,
 			spaceBetween: 22,
 			centeredSlides: true,
 			loop: true,
