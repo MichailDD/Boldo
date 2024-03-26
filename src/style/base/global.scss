@@ -2,7 +2,6 @@
 @import "normalize";
 
 .wrapper {
-	overflow-x: hidden;
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -29,8 +28,4 @@
 
 .lock {
 	overflow: hidden;
-}
-
-body {
-	overflow-x: hidden;
 }
