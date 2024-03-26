@@ -7,4 +7,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 	initSwiper()
 	setActiveElement()
 	chart()
+
+	
+	
 })
+
+
