@@ -1,8 +1,4 @@
-// .customers__list-item {
-// 	&:hover path {
-// 		stroke: red;
-// 	}
-// }
+@import 'media-breakpoints';
 
 .customers {
 	max-width: 1130px;
@@ -10,13 +6,29 @@
 	margin: 0 auto;
 	padding-top: 134px;
 
+	@include media-breakpoint-down(sm) {
+		padding-top: 0;
+	}
+
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
+
+		@include media-breakpoint-down(md) {
+			gap: 30px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			flex-direction: column;
+		}
 	}
 
 	&__information {
 		padding-top: 105px;
+
+		@include media-breakpoint-down(sm) {
+			padding-top: 40px;
+		}
 	}
 
 	&__title {
@@ -24,6 +36,117 @@
 		font-family: var(--second-font-family);
 		max-width: 480px;
 		line-height: 1.56;
+
+		@include media-breakpoint-down(md) {
+			font-size: 24px;
+		}
+	}
+
+	&__images {
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 24px;
+
+		}
+
+		&-big {
+			@include media-breakpoint-down(sm) {
+				max-height: 470px;
+				object-fit: contain;
+			}
+		}
+
+		&-block {
+			border-radius: 12px;
+			max-width: 291px;
+			max-height: 388px;
+			padding: 48px 60px;
+			box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.12);
+			background-color: var(--white-color);
+			position: absolute;
+			top: 305px;
+			left: 48px;
+
+			@include media-breakpoint-down(lg) {
+				padding: 28px 35px;
+			}
+
+			@include media-breakpoint-down(sm) {
+				top: 270px;
+			}
+
+			@include media-breakpoint-down(xs) {
+				top: 230px;
+				max-width: 200px;
+				padding: 15px 20px;
+			}
+		}
+
+		&-chart {
+			max-width: 175px;
+			max-height: 175px;
+
+			@include media-breakpoint-down(sm) {
+				max-width: 130px;
+				max-height: 130px;
+				margin: 0 auto;
+			}
+
+			@include media-breakpoint-down(xs) {
+				max-width: 100px;
+				max-height: 100px;
+			}
+		}
+
+		&-list {
+			font-weight: 400;
+			font-size: 14px;
+			font-family: var(--second-font-family);
+			margin-top: 30px;
+			display: flex;
+			flex-direction: column;
+			gap: 23px;
+			padding-left: 6px;
+
+			@include media-breakpoint-down(sm) {
+				margin-top: 20px;
+			}
+
+			@include media-breakpoint-down(xs) {
+				font-size: 12px;
+			}
+
+		}
+
+		&-item {
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 5px;
+				height: 5px;
+				left: -10px;
+				top: 5px;
+				border-radius: 50%;
+			}
+
+			&:nth-child(1)::before {
+				background-color: #69E6A6;
+			}
+
+			&:nth-child(2)::before {
+				background-color: var(--dark-blue);
+			}
+
+			&:nth-child(3)::before {
+				background-color: #0DBBFC;
+			}
+		}
 	}
 
 	&__list {
@@ -42,6 +165,11 @@
 			box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.08);
 			background: rgb(255, 255, 255);
 			transition: all 0.3s ease 0s;
+			cursor: pointer;
+
+			@include media-breakpoint-down(md) {
+				min-width: auto;
+			}
 
 			&:hover {
 				background-color: var(--dark-blue);

@@ -6,6 +6,9 @@
 	border: 0;
 }
 
+body {
+	overflow-x: hidden;
+}
 
 *,
 *:before,
@@ -53,10 +56,6 @@ button,
 textarea {
 	background: transparent;
 	font-family: inherit;
-}
-
-body {
-	overflow-x: hidden;
 }
 
 input::-ms-clear {
