@@ -15,7 +15,6 @@ export default defineConfig({
 		// 	}
 		// }
 	},
-	base: '/Boldo',
 
 	server: {
 		port: 3025,
