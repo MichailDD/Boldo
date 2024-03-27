@@ -8,13 +8,14 @@ import injectHTML from 'vite-plugin-html-inject'
 export default defineConfig({
 	build: {
 		target: 'es2022',
-		outDir: 'build',
+		outDir: 'build'
 		// rollupOptions: {
 		// 	input: {
 		// 		...pagesInput
 		// 	}
 		// }
 	},
+	base: '/Boldo',
 
 	server: {
 		port: 3025,
