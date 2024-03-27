@@ -38,7 +38,7 @@ export function addCards() {
 		card.classList.add('proposition__card')
 		card.innerHTML = `
             <div class="proposition__card-image">
-                <img src="/Boldo/assets/image-3-CNZksseJ.png" alt="image card">
+                <img src="/Boldo/assets/image-1-zdmVgjNx.png" alt="image card">
             </div>
             <div class="proposition__card-descr">
                 <p class="proposition__card-category">
