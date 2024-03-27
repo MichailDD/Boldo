@@ -1,0 +1,115 @@
+@import 'media-breakpoints';
+
+.footer {
+	margin-top: 82px;
+	padding-top: 100px;
+	padding-bottom: 120px;
+
+	@include media-breakpoint-down(sm) {
+		padding-top: 0;
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 177px;
+
+		@include media-breakpoint-down(md) {
+			gap: 10px;
+			justify-content: space-between;
+		}
+
+		@include media-breakpoint-down(sm) {
+			flex-direction: column;
+		}
+	}
+
+	&__left {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__descr {
+		font-size: 16px;
+		line-height: 1.75;
+		color: var(--gray);
+		max-width: 300px;
+		padding-top: 40px;
+
+		@include media-breakpoint-down(sm) {
+			max-width: 100%;
+		}
+	}
+
+	&__reserved {
+		font-size: 16px;
+		line-height: 1.75;
+		color: var(--gray);
+		padding-top: 64px;
+
+		@include media-breakpoint-down(sm) {
+			padding-top: 30px;
+		}
+	}
+
+	&__right {
+		display: flex;
+		gap: 158px;
+		padding-top: 10px;
+
+		@include media-breakpoint-down(md) {
+			gap: 80px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-top: 40px;
+			justify-content: space-between;
+		}
+
+		@include media-breakpoint-down(xs) {
+			flex-wrap: wrap;
+			padding-right: 60px;
+		}
+
+	}
+
+	&__links {
+		display: flex;
+		flex-direction: column;
+
+		&-title {
+			font-size: 20px;
+			font-weight: var(--700);
+		}
+
+		&-list {
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			gap: 45px;
+		}
+
+		&-item {
+			position: relative;
+
+			&-bage {
+				&::after {
+					content: 'Hiring!';
+					position: absolute;
+					top: -3px;
+					right: -62px;
+					font-size: 13px;
+					font-weight: var(--700);
+					color: var(--dark-blue);
+					border-radius: 120px;
+					background-color: var(--green);
+					padding: 9px 12px;
+				}
+			}
+
+			a {
+				font-size: 20px;
+				color: var(--gray);
+			}
+		}
+	}
+}
