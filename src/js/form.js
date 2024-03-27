@@ -5,7 +5,7 @@ function isValidEmail(email) {
 	return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
 
- export function sendEmail() {
+export function sendEmail() {
 	const btn = document.querySelector('.form__btn')
 	if (isValidEmail(input.value)) {
 		btn.classList.add('active-btn')
@@ -20,5 +20,5 @@ input.addEventListener('input', sendEmail)
 
 form.addEventListener('submit', function (event) {
 	event.preventDefault()
-	alert('Форма отправлена!')
+	alert('Form submitted!')
 })
