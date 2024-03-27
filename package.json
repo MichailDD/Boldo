@@ -1,23 +1,25 @@
 {
-  "name": "boldo",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1",
-    "vite": "^5.2.0"
-  },
-  "dependencies": {
-    "sass": "^1.72.0",
-    "swiper": "^11.0.7",
-    "vite-plugin-full-reload": "^1.1.0",
-    "vite-plugin-handlebars": "^2.0.0",
-    "vite-plugin-html-inject": "^1.1.2",
-    "vite-plugin-static-copy": "^1.0.1"
-  }
+	"name": "boldo",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"gh-pages": "^6.1.1",
+		"vite": "^5.2.0"
+	},
+	"dependencies": {
+		"sass": "^1.72.0",
+		"swiper": "^11.0.7",
+		"vite-plugin-full-reload": "^1.1.0",
+		"vite-plugin-handlebars": "^2.0.0",
+		"vite-plugin-html-inject": "^1.1.2",
+		"vite-plugin-static-copy": "^1.0.1"
+	}
 }
